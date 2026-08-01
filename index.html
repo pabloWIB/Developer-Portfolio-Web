@@ -1,256 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/styles.css">
-	<link rel="stylesheet" href="CSS/fonts.css">
-	<link rel="icon" type="image/x-icon" href="IMG/icon.png">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
-	<script src="JS/script.js"></script>
-	<title>Portafolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Billy Pearson — Front-end Developer Portfolio Demo</title>
+  <meta name="description" content="A front-end developer portfolio built to a devChallenges design brief. Six responsive HTML and CSS project builds, presented with a fictional persona.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Billy Pearson — Front-end Developer Portfolio Demo">
+  <meta property="og:description" content="A front-end developer portfolio built to a devChallenges design brief. Six responsive HTML and CSS project builds, presented with a fictional persona.">
+  <meta property="og:locale" content="en">
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "name": "Billy Pearson — Front-end Developer Portfolio Demo",
+        "description": "A front-end developer portfolio built to a devChallenges design brief, using a fictional persona.",
+        "genre": "Front-end web development",
+        "author": { "@id": "#pablo-nieto-perez" }
+      },
+      {
+        "@type": "Person",
+        "@id": "#pablo-nieto-perez",
+        "name": "Pablo Nieto Pérez",
+        "url": "https://wib.digital",
+        "jobTitle": "Web Designer and Developer",
+        "sameAs": [
+          "https://www.fiverr.com/pablonietop",
+          "https://www.linkedin.com/in/pablo-nieto-perez-39a530292"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-	<header>
-		<div class="proflie-class">
-			<img src="IMG/profile-closed.png" alt="Profile">
-			<img class="profile-open" src="IMG/profile-open.png" alt="Profile">
-		</div>
-		<div>
-			<div class="grandchild-header-1">
-				<div>
-					<h1>Billy Pearson</h1>
-					<h2>Front-end developer</h2>
-				</div>
-				<div>
-					<div class="grand-header2">
-						<div class="mail-class">
-							<img class="mail-close" src="IMG/mail.svg" alt="mail">
-							<img class="mail-open" src="IMG/mail-open.svg" alt="">
-						</div>
-						<p>billy@devplex.com</p>
-					</div>
-					<div class="grand-header2">
-						<div class="phone-class">
-							<img src="IMG/phone.svg" alt="phone">
-							<img class="phone-open" src="IMG/phone-open.svg" alt="phone">
-						</div>
-						<p>(+413) 782 956 210</p>
-					</div>
-				</div>
-			</div>
-			<div class="grandchild-header-2">
-				<p>Self-motivated developer, who is willing to learn and create outstanding UI applications.<br><br> Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. </p>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="child-main-1">
-			<div class="grand-child-1">
-				<h2>FRONT END</h2>
-				<div class="progress">
-					<h3 class="h3-progress">React</h3>
-					<div class="progress-container">
-						<div class="progress-bar"></div>
-						<div class="progess-number">65.6 %</div>
-					</div>
-				</div>
-				<div class="progress">
-					<h3 class="h3-progress-2">Javascript</h3>
-					<div class="progress-container-2">
-						<div class="progress-bar-2"></div>
-						<div class="progess-number-2">84 %</div>
-					</div>
-				</div>
-				<div class="progress">
-					<h3 class="h3-progress-3">CSS</h3>
-					<div class="progress-container-3">
-						<div class="progress-bar-3"></div>
-						<div class="progess-number-3">92.4 %</div>
-					</div>
-				</div>
-				<div class="progress">
-					<h3 class="h3-progress-4">Vue</h3>
-					<div class="progress-container-4">
-						<div class="progress-bar"></div>
-						<div class="progess-number-4">65.6 %</div>
-					</div>
-				</div>
-				<div class="progress">
-					<h3 class="h3-progress-5">Redux</h3>
-					<div class="progress-container-5">
-						<div class="progress-bar-2"></div>
-						<div class="progess-number-5">84 %</div>
-					</div>
-				</div>
-				<div class="progress">
-					<h3 class="h3-progress-6">React Native</h3>
-					<div class="progress-container-6">
-						<div class="progress-bar-3"></div>
-						<div class="progess-number-6">92.4 %</div>
-					</div>
-				</div>
-			</div>
-			<div class="grand-child-2">
-				<h2><span>Hobbies</span></h2>
-				<div>
-					<img src="IMG/photo2.png" alt="Gaming">
-				</div>
-				<h2>Gaming</h2>
-				<h3>Quisque feugiat malesuada molestie.</h3>
-				<div>
-					<img src="IMG/photo3.png" alt="Cooking">
-				</div>
-				<h2>Cooking</h2>
-				<h3>Quisque feugiat malesuada molestie.</h3>
-				<div>
-					<img src="IMG/photo4.png" alt="Biking">
-				</div>
-				<h2>Biking</h2>
-				<h3>Quisque feugiat malesuada molestie.</h3>
-			</div>
-		</div>
-		<div class="child-main-2">
-			<div class="grand-child-3">
-				<div>
-					<h3>Blog</h3>
-				</div>
-				<div>
-					<div class="text-space-image">
-						<p>How to<br>organize your<br>CSS</p>
-					</div>
-					<div class="image-space-text">
-						<img src="IMG/photo1.png" alt="Computer and Coffee">
-					</div>
-				</div>
-				<div>
-					<p class="grand-child-3-p">In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi. <br><br> Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
-				</div>
-				<div>
-					<a target="blank" href="https://devchallenges.io/portfolio/pabloDYEL">dev.to</a>
-				</div>
-			</div>
-			<div class="grand-child-4">
-				<h2>Experiences</h2>
-				<div class="grand-child-4-nth-1">
-					<div>
-						<img src="IMG/photo5.png" alt="Adidas">
-					</div>
-					<div class="text">
-						<h4>Feb 2017 - Current</h4>
-						<h3>Front-end developer</h3>
-						<p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
-					</div>
-				</div>
-				<div class="grand-child-4-nth-2">
-					<div>
-						<img src="IMG/photo6.png" alt="H & M">
-					</div>
-					<div class="text">
-						<h4>Aug 2016 - Feb 2018</h4>
-						<h3>Full-stack developer</h3>
-						<p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>	
-	<nav>
-		<div>
-			<h2>Projects (3)</h2>
-		</div>
-		<div>
-			<a href="#">
-				<button>React</button>
-			</a>
-			<a href="#">
-				<button>Vue</button>
-			</a>
-			<a href="#">
-				<button>Reponsive</button>
-			</a>
-		</div>
-	</nav>
-	<section>
-		<div class="section-1">
-			<div>
-				<img src="IMG/photo8.png" alt="Web page">
-			</div>
-			<div>
-				<p>#HTML</p>
-				<p>#CSS</p>
-				<p>#responsive</p>
-			</div>
-			<div>
-				<h2>Recipe Blog</h2>
-				<p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-			</div>
-			<div>
-				<a href="">
-					<button class="demo-botton">Demo</button>
-				</a>
-				<a href="">
-					<button class="code-button">Code</button>
-				</a>
-			</div>
-		</div>
-		<div class="section-1">
-			<div>
-				<img src="IMG/photo7.png" alt="Web page">
-			</div>
-			<div>
-				<p>#HTML</p>
-				<p>#CSS</p>
-				<p>#responsive</p>
-			</div>
-			<div>
-				<h2>My Gallery</h2>
-				<p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-			</div>
-			<div>
-				<a href="">
-					<button class="demo-botton">Demo</button>
-				</a>
-				<a href="">
-					<button class="code-button">Code</button>
-				</a>
-			</div>
-		</div>
-		<div class="section-1">
-			<div>
-				<img src="IMG/photo12.png" alt="Web page">
-			</div>
-			<div>
-				<p>#HTML</p>
-				<p>#CSS</p>
-				<p>#responsive</p>
-			</div>
-			<div>
-				<h2>Checkout</h2>
-				<p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
-			</div>
-			<div>
-				<a href="">
-					<button class="demo-botton">Demo</button>
-				</a>
-				<a href="">
-					<button class="code-button">Code</button>
-				</a>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div>
-			<button><</button>
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button class="unset">...</button>
-			<button>10</button>
-			<button>></button>
-		</div>
-	</footer><br><br><br><br>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="container page">
+
+    <header class="site-header card">
+      <button class="avatar" type="button" aria-pressed="false" aria-label="Make the portrait wink">
+        <img src="assets/img/content/avatar.webp" width="500" height="500"
+             alt="Hand-drawn portrait of Billy Pearson, smiling straight ahead">
+        <img class="avatar__wink" src="assets/img/content/avatar-wink.webp" width="500" height="500" alt="">
+      </button>
+
+      <div class="site-header__body">
+        <div class="site-header__identity">
+          <h1>Billy Pearson</h1>
+          <p class="site-header__role">Front-end developer</p>
+        </div>
+
+        <p class="site-header__intro">
+          Self-motivated developer, who is willing to learn and create outstanding UI applications.
+        </p>
+
+        <nav class="site-nav" aria-label="Sections">
+          <ul class="site-nav__list">
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#hobbies">Hobbies</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <div class="layout-grid">
+
+        <section class="card" id="skills" aria-labelledby="skills-title">
+          <div class="section-head">
+            <h2 id="skills-title">Front end</h2>
+            <p class="section-head__count">Select a row to reveal the level</p>
+          </div>
+
+          <ul class="skill-list">
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">React</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--66"></span></span>
+                  <span class="skill__value">65.6%</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">JavaScript</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--84"></span></span>
+                  <span class="skill__value">84%</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">CSS</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--92"></span></span>
+                  <span class="skill__value">92.4%</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">Vue</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--66"></span></span>
+                  <span class="skill__value">65.6%</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">Redux</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--84"></span></span>
+                  <span class="skill__value">84%</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="skill" type="button" aria-expanded="false">
+                <span class="skill__name">React Native</span>
+                <span class="skill__meter">
+                  <span class="skill__track"><span class="skill__fill skill__fill--92"></span></span>
+                  <span class="skill__value">92.4%</span>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" id="hobbies" aria-labelledby="hobbies-title">
+          <div class="section-head">
+            <h2 id="hobbies-title">Hobbies</h2>
+          </div>
+
+          <ul class="hobby-list">
+            <li>
+              <img class="hobby__image" src="assets/img/content/hobby-gaming.webp"
+                   width="960" height="360" loading="lazy"
+                   alt="Hands holding a game controller, lit by a screen">
+              <h3 class="hobby__name">Gaming</h3>
+            </li>
+            <li>
+              <img class="hobby__image" src="assets/img/content/hobby-cooking.webp"
+                   width="960" height="360" loading="lazy"
+                   alt="A wooden spoon and spatula beside a phone on a worktop">
+              <h3 class="hobby__name">Cooking</h3>
+            </li>
+            <li>
+              <img class="hobby__image" src="assets/img/content/hobby-biking.webp"
+                   width="960" height="360" loading="lazy"
+                   alt="Two hands gripping the handlebars of a bicycle">
+              <h3 class="hobby__name">Biking</h3>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <section class="card" id="projects" aria-labelledby="projects-title">
+        <div class="section-head">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-head__count">6 builds</p>
+          <a class="link-arrow" href="https://devchallenges.io/portfolio/pabloDYEL"
+             target="_blank" rel="noopener">See them on devChallenges</a>
+        </div>
+
+        <ul class="project-grid">
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/recipe-blog.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Recipe article headed Classic Cheesecake Recipe, with an intro note above a photo of a slice of cheesecake">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">Recipe Blog</h3>
+              <p class="project__summary">
+                A recipe article layout: serif headline, a short standfirst and a full-width photograph of the finished dish.
+              </p>
+            </div>
+          </li>
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/profile-gallery.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Profile page for Rodney Cotton showing an avatar, post and follower counts, and a grid of interior photographs">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">My Gallery</h3>
+              <p class="project__summary">
+                A profile page with a centred avatar, three counter tiles and a photo grid that reflows underneath.
+              </p>
+            </div>
+          </li>
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/checkout.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Checkout page with contact and shipping fields on the left and an order summary listing two items on the right">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">Checkout</h3>
+              <p class="project__summary">
+                A two-column checkout: contact and address inputs beside an order summary with quantity steppers and a running total.
+              </p>
+            </div>
+          </li>
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/not-found-page.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Error page showing a scarecrow illustration next to the message I have bad news for you">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">404 Page</h3>
+              <p class="project__summary">
+                An error page that pairs a scarecrow illustration with a monospaced message and one route back to the homepage.
+              </p>
+            </div>
+          </li>
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/interior-landing.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Dark landing page for an interior design studio, with a serif headline beside a photograph of a lit living room">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">Interior Landing</h3>
+              <p class="project__summary">
+                A dark landing page for an interior design studio, built around a serif headline and an offset photograph card.
+              </p>
+            </div>
+          </li>
+
+          <li class="project card">
+            <img class="project__image" src="assets/img/projects/agency-landing.webp"
+                 width="800" height="597" loading="lazy"
+                 alt="Agency landing page headed We create beautiful and fast web services, above a wide photo of a team meeting">
+            <ul class="project__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Responsive</li>
+            </ul>
+            <div>
+              <h3 class="project__name">Edie Agency Landing</h3>
+              <p class="project__summary">
+                An agency landing page with a light navigation bar, a two-line headline and a wide team photograph beneath it.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Billy Pearson is a fictional persona from a
+        <a href="https://devchallenges.io" target="_blank" rel="noopener">devChallenges</a> design brief.
+      </p>
+      <p>
+        Built by <a href="https://wib.digital" rel="noopener">wib.digital</a> —
+        <a href="https://www.fiverr.com/pablonietop" rel="noopener">hire me on Fiverr</a>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>

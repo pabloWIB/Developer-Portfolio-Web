@@ -1,214 +1,108 @@
-[![screely-1749367640555.png](https://i.postimg.cc/pX0HcNHM/screely-1749367640555.png)](https://postimg.cc/0bJFrBjV)
+# Developer-Portfolio-Web
 
-# Billy Pearson - Frontend Developer Portfolio
+Front-end developer portfolio built to a devChallenges design brief: skills, hobbies and six project builds on a single page.
 
-## Descripción
+[![Hire me on Fiverr](https://img.shields.io/badge/Hire%20me%20on-Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/pablonietop)
 
-Portfolio personal estático de Billy Pearson, desarrollador frontend especializado en crear aplicaciones UI excepcionales. El sitio web muestra su experiencia, proyectos, habilidades técnicas y blog personal.
+[![Live demo](https://img.shields.io/badge/demo-portfoliobilly.wib.digital-2ea44f)](https://portfoliobilly.wib.digital)
+![Dependencies](https://img.shields.io/badge/npm%20dependencies-0-brightgreen)
+![Build step](https://img.shields.io/badge/build%20step-none-lightgrey)
+![First load](https://img.shields.io/badge/first%20load-166%20KB-blue)
 
-## Información del Desarrollador
+## Description
 
-**Billy Pearson**  
-Frontend Developer  
-📧 billy@devplex.com  
-📱 (+413) 782 956 210
+A developer portfolio implemented from a supplied design. The identity on screen — **Billy Pearson** — is the fictional persona that comes with the brief, not a real person, and the page says so in its own footer.
 
-### Perfil Profesional
-"Self-motivated developer, who is willing to learn and create outstanding UI applications. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+The structure is the conventional one done carefully: a headline naming the role, a skills row across React, JavaScript, CSS, Vue, Redux and React Native, and a grid of six project builds. Each skill row is a button; pressing it reveals the level, and the number stays in the accessibility tree whether or not it is visible, so screen readers never depend on the animation.
 
-## Habilidades Técnicas
+A hobbies section closes it, on the reasoning that a portfolio's job is partly to make its author look like someone worth working with.
 
-### Frontend Stack
-- **React** - Biblioteca principal para desarrollo UI
-- **JavaScript** - Lenguaje de programación principal
-- **CSS** - Estilos y diseño responsivo
-- **Vue** - Framework alternativo para SPA
-- **Redux** - Gestión de estado en aplicaciones React
-- **React Native** - Desarrollo de aplicaciones móviles
+## Features
 
-## Experiencia Profesional
+- Six project cards, each with a real screenshot of the build it describes.
+- Skill rows that reveal their level on click, `Enter` or `Space`.
+- A portrait that winks when activated — keyboard included.
+- Mobile-first layout verified with no horizontal scroll at 360, 768, 1024 and 1440 px.
+- Every interactive element reaches 44×44 px and shows a 3 px focus ring.
+- All body and heading text measured at 4.5:1 contrast or better.
+- 166 KB across 14 requests on first load. No build step, no npm dependencies, no JavaScript framework.
 
-### Frontend Developer
-**Feb 2017 - Current**  
-Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+## Tech stack
 
-### Full-stack Developer
-**Aug 2016 - Feb 2018**  
-Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+| Layer | Technology | Role in project |
+|---|---|---|
+| Markup | HTML5 | `index.html` and `404.html` |
+| Styling | CSS3 with custom properties | Three files: variables and reset, layout, components |
+| Scripting | Vanilla JavaScript | One file, 55 lines, one delegated listener |
+| Fonts | Montserrat, via Google Fonts | `preconnect` plus `display=swap` |
+| Images | WebP | 11 assets, 179 KB total |
+| Icons | Inline SVG | Favicon, generated in-repo |
 
-## Proyectos Destacados (3)
-
-### 1. Recipe Blog
-**Tecnologías**: HTML, CSS, Responsive Design
-- Página responsiva creada con HTML y CSS
-- Diseño inspirado en devchallenge.io
-- **Links**: [Demo] | [Code]
-
-### 2. My Gallery
-**Tecnologías**: HTML, CSS, Responsive Design
-- Galería de imágenes responsiva
-- Implementación con HTML y CSS puro
-- Diseño basado en devchallenge.io
-- **Links**: [Demo] | [Code]
-
-### 3. Checkout
-**Tecnologías**: HTML, CSS, Responsive Design
-- Sistema de checkout responsivo
-- Interfaz de usuario intuitiva
-- Diseño de devchallenge.io
-- **Links**: [Demo] | [Code]
-
-## Blog Personal
-
-### Artículo Destacado: "How to organize your CSS"
-**Plataforma**: dev.to
-
-"In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
-
-## Intereses Personales
-
-### Gaming
-Quisque feugiat malesuada molestie.
-
-### Cooking
-Quisque feugiat malesuada molestie.
-
-### Biking
-Quisque feugiat malesuada molestie.
-
-## Tecnologías Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-
-## Estructura del Proyecto
+## Project structure
 
 ```
-billy-portfolio/
-├── index.html
-├── projects.html
-├── blog.html
-├── contact.html
-├── css/
-│   ├── style.css
-│   ├── responsive.css
-│   ├── projects.css
-│   └── blog.css
-├── js/
-│   ├── main.js
-│   ├── portfolio.js
-│   └── contact.js
-├── images/
-│   ├── profile/
-│   ├── projects/
-│   └── blog/
-├── projects/
-│   ├── recipe-blog/
-│   ├── my-gallery/
-│   └── checkout/
-└── README.md
+.
+├── index.html                    # The whole site: header, skills, hobbies, projects
+├── 404.html                      # Error page, links back to the homepage
+├── favicon.ico                   # 16/32 px, rendered from favicon.svg
+├── robots.txt
+├── sitemap.xml                   # Relative <loc>; needs the domain prefixed before submitting
+├── assets/
+│   ├── css/
+│   │   ├── base.css              # Custom properties, reset, typography, focus ring
+│   │   ├── layout.css            # Container, header, nav, grids, footer
+│   │   └── components.css        # Cards, avatar, skill bars, tags, project cards
+│   ├── js/
+│   │   └── main.js               # Delegated ARIA toggles for the avatar and skill rows
+│   └── img/
+│       ├── brand/                # favicon.svg, apple-touch-icon.png
+│       ├── content/              # Avatar (2 states) and hobby photographs
+│       └── projects/             # Six project screenshots
+└── docs/
+    ├── auditoria.md              # State of the repository before the reorganisation
+    └── cambios.md                # Everything changed, grouped by phase
 ```
 
-## Instalación
+## Running it locally
+
+The site is static and has no build step. Opening `index.html` straight from the file system works — the script is a classic deferred script rather than an ES module precisely so that it does.
+
+To serve it over HTTP instead:
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/pabloWIB/Portfolio-Billy.git
-
-# Navegar al directorio del proyecto
-cd Portfolio-Billy
-
-# Abrir en navegador
-# Abrir index.html en tu navegador web
+git clone https://github.com/pabloWIB/Developer-Portfolio-Web.git
+cd Developer-Portfolio-Web
+npx serve .
 ```
 
-## Secciones del Portfolio
+Any static server will do; `python -m http.server` works the same way.
 
-### Hero Section
-- Información personal y de contacto
-- Descripción profesional
-- Enlaces a redes sociales y contacto
+## Deployment
 
-### Skills Section
-- Stack técnico frontend
-- Tecnologías principales
-- Nivel de experiencia
+Deployed on Vercel at [portfoliobilly.wib.digital](https://portfoliobilly.wib.digital). Upload the repository root as-is: no build command, no output directory, no environment variables.
 
-### Experience Section
-- Historial laboral detallado
-- Fechas y descripción de roles
-- Responsabilidades principales
+Two things still need the production domain filled in, because they cannot be correct without it:
 
-### Projects Section
-- 3 proyectos principales
-- Tecnologías utilizadas por proyecto
-- Enlaces a demo y código fuente
-- Paginación (página 1 de 10)
+- `sitemap.xml` uses a relative `<loc>`. The sitemap protocol requires absolute URLs, so prefix the domain before submitting it to Search Console.
+- `index.html` carries no `<link rel="canonical">` and no `og:url`. Both need the absolute URL.
 
-### Blog Section
-- Artículos técnicos
-- Enlaces a dev.to
-- Contenido sobre desarrollo frontend
+## Credits
 
-### Hobbies Section
-- Intereses personales
-- Gaming, Cooking, Biking
-- Personalidad del desarrollador
+Built to a [devChallenges](https://devchallenges.io) front-end challenge brief. The six builds are visible on [the devChallenges profile](https://devchallenges.io/portfolio/pabloDYEL).
 
-## Características del Diseño
+## Author
 
-### Responsive Design
-- Adaptado para móviles, tablets y desktop
-- CSS Grid y Flexbox para layouts
-- Imágenes optimizadas para diferentes pantallas
-
-### UI/UX
-- Diseño limpio y profesional
-- Navegación intuitiva
-- Call-to-actions claros
-- Tipografía legible
-
-### Performance
-- Páginas estáticas para carga rápida
-- Imágenes optimizadas
-- CSS y JS minificados
-
-## Uso
-
-Este portfolio estático sirve para:
-
-1. **Presentar habilidades técnicas** de frontend
-2. **Mostrar proyectos realizados** con enlaces funcionales
-3. **Compartir experiencia profesional** y trayectoria
-4. **Destacar contenido de blog** técnico
-5. **Proporcionar información de contacto** profesional
-
-## Personalización
-
-Fácil de personalizar cambiando:
-- Información personal en HTML
-- Colores y estilos en CSS
-- Proyectos y enlaces
-- Contenido del blog
-- Experiencia profesional
-
-## Repositorio
-
-- **GitHub**: https://github.com/pabloWIB/Portfolio-Billy.git
-- **Autor**: pabloWIB
-
-## Contacto
-
-Para contactar con Billy Pearson:
-- **Email**: billy@devplex.com
-- **Teléfono**: (+413) 782 956 210
-- **Portfolio**: [URL del portfolio desplegado]
-
-## Licencia
-
-Consulta el repositorio para información sobre la licencia.
+**Pablo Nieto Pérez** — [wib.digital](https://wib.digital)
+GitHub: [@pabloWIB](https://github.com/pabloWIB)
 
 ---
 
-*"Self-motivated developer creating outstanding UI applications"*
+## Hire me
+
+I build **custom internal tools, CRMs and dashboards** for small teams, and
+**conversion-focused websites** for businesses.
+
+- [Custom internal tool, CRM or dashboard](https://www.fiverr.com/pablonietop/build-a-custom-internal-app-for-your-business) — from $45
+- [Conversion-focused website](https://www.fiverr.com/pablonietop/convert-your-landing-page-design-to-code) — from $80
+- [All my services on Fiverr](https://www.fiverr.com/pablonietop)
+- [wib.digital](https://wib.digital)

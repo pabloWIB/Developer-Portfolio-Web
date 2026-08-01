@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Rutas relativas porque el proyecto se preparó sin dominio de publicación fijado.
+  El protocolo de sitemaps exige URLs absolutas: antes de enviar este archivo a
+  Search Console hay que anteponer el dominio real a cada <loc> y añadir la línea
+  "Sitemap: https://<dominio>/sitemap.xml" a robots.txt.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/index.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
